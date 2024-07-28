@@ -1,0 +1,915 @@
+/* Styles for the fixed navigation bar */
+
+body{
+    width: 100%;
+  }
+  .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.8); /* Transparent with white background */
+      z-index: 1000; /* Ensure it's above other content */
+      padding: 10px 20px; /* Adjust as needed */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    
+    /* Styles for the logo */
+    .logo {
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    .logo img {
+      width: 100px; /* Adjust as needed */
+      height: auto;
+      margin-right: 10px; /* Adjust as needed */
+    }
+    
+    /* Styles for navigation links */
+    .navbar-links {
+      flex-grow: 1;
+      text-align: center;
+     
+    }
+    
+    .navbar-links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333; /* Adjust link color */
+      font-weight: bold;
+      border-radius: 50%; /* Make it a circle */
+      background-color: transparent; /* Background color transparent by default */
+      transition: all 0.3s ease; /* Add smooth transition */
+    }
+    
+    /* Styles for active link */
+    .navbar-links a.active {
+      color: blue; /* Adjust active link color */
+    }
+    
+    /* Circle shape on hover */
+    .navbar-links a:hover {
+      background-color: #ccc; /* Adjust background color on hover */
+    }
+    
+    /* Hide the transparent navigation bar when not scrolled */
+    .navbar {
+      opacity: 1;
+      box-shadow: none;
+    }
+  /* style for first name avatar  */
+.avatar{
+  padding: 5px;
+  background-color: purple;
+  width: 30px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* user dropdown toggler  */
+.userDropdown{
+  position: relative;
+}
+
+/* style for the dropdown content after clicking avatar  */
+.dropdown-content{
+  background-color: skyblue;
+  color: black;
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 10px;
+  padding: 10px;
+  min-width: 19vw;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 4;
+  height: auto;
+}
+
+.dropdown-content h3{
+  background-color: purple;
+  color: black;
+  border-radius: 50%;
+  width: 4.5rem;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3rem;
+}
+
+/* username of user  */
+.dropdown-content p:nth-child(2){
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* my booking  */
+.dropdown-content p:nth-child(3){
+  margin-top: 0rem;
+  margin: 1.4rem;
+  background-color: skyblue;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.dropdown-content #logout{
+  margin-top: 0rem;
+  display: block;
+  margin: 1.4rem;
+  background-color: red;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid black;
+}
+.dropdown-content a{
+  margin-top: auto;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+    
+    /* Add padding to content when the navbar is fixed */
+    body.fixed-nav {
+      padding-top: 70px; /* Adjust based on navbar height */
+    }
+    
+    
+    /* Placeholder styles for content */
+    /* home content */
+    
+    body,html{
+      margin: 0;
+      padding:0;
+      width: 100%;
+      height: 100%;
+      font-family: sans-serif;
+    }
+  .home{
+    margin-top: auto;
+    padding: 0px;
+    width:100% ;
+    height: 100%;
+    overflow: hidden;
+    position:relative;
+    background-image: url(Images/explore\ the\ world.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 50s infinite ease-in-out;
+  
+  }
+  .Home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%,-50%);
+  text-transform:uppercase ;
+  }
+  
+  .Home-content h1{
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+  }
+  
+  .Home-content h1 span{
+  color: aquamarine;
+    
+  }
+  .Home-content a{
+  
+    background: #85c1ee;
+    padding: 10px 24;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .Home-content a:hover{
+  background: #034e88;
+  color: #fff;
+  }
+  @keyframes change{
+    0%
+    {
+      background-image: url(Images/chitwan\ national\ park.jpg);
+  
+    }
+   10%
+    {
+      background-image: url(Images/gosaikunda.jpg);
+      
+    } 
+     20%
+    {
+      background-image: url(Images/annnapurna.jpg);
+      
+    }  
+    30%
+    {
+      background-image: url(Images/pashupatinath.jpg);
+      
+    }  
+    40%
+    {
+      background-image: url(Images/patan\ durbar\ sqaure.jpg);
+      
+    }  
+    50%
+    {
+      background-image: url(Images/lumbini.jpg);
+      
+    }
+    60%
+    {
+      background-image: url(Images/mustang.jpg);
+      
+    }
+    70%
+    {
+      background-image: url(Images/rara\ lake.jpg);
+      
+    }
+    80%
+    {
+      background-image: url(Images/janakpur.jpg);
+      
+    }
+    90%
+    {
+      background-image: url(Images/bandipur.jpg);
+      
+    }
+    100%
+    {
+      background-image: url(Images/bhaktapur\ nyatapola\ temple.jpg);
+      
+    }
+  }
+  
+  
+  
+  /* explore content */
+  
+  *{
+    margin: 0px;
+  padding: 0px;
+  }
+  
+  body{
+    font-family: Arial;
+  }
+   
+  .explore_container{
+    padding-top: 20px;
+    
+  }
+  .Explore-Destination{
+    display: flex;
+    justify-content: center;
+   
+  }
+  .explore-caption{
+    position: fixed;
+  }
+  .explore-cards{
+    
+    width: 20%;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 2px 2px 10px black;
+  }
+  
+  
+  .explore-image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  flex-wrap: wrap;
+  }
+  .explore-title{
+    text-align: center;
+    padding: 5px;
+  }
+  .description{
+    text-align: center;
+    padding: 4px;
+  }
+   button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+    
+   }
+  
+  /* slider of explore */
+  /* .explore_container{
+    padding: 75px 10%;
+  }
+  
+  .explore_container{
+    background: #fff;
+  
+  }
+  .Explore-Destination {
+    width: 100%;
+    
+  }
+  
+  .explore-cards {
+    max-width: 300px;
+    margin: 30px;
+    padding: 30px;
+    height: 220px;
+    background: #DADBF1; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* border:2px solid red; */
+  /* } */ 
+  
+  
+  
+  
+  
+  
+  
+    /* .explore-contents{
+      margin-bottom: 350px;
+    }
+    .gosaikunda{
+  width: 350px;
+  Padding: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  }
+  .gosaikunda img{
+  width: 100%;
+  }
+  .gosaikunda p{
+  text-align: center;
+  }
+  .des-of-gosaikunda{
+    text-align: left;
+  }
+  .background-of-home{
+    height: 850px;
+    width: 100%;
+    Padding: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  } */
+  
+  
+  
+  /* Additional styles for cards, images, titles, etc. */
+  
+  
+  
+  
+  .gosaikunda-img img{
+  height: 500px;
+  width: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* end of explore content */
+  
+  .hotel-1 img{
+  width: 100%;
+  }
+  .hotel-1 p{
+     text-align: center;
+  }
+  .hotel-1{
+    width: 350px;
+  Padding: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  }
+  .hotel-1 img{
+    width: 100%;
+  }
+  .hotel-1 p{
+    text-align: center;
+  }
+  .About-us{
+    text-align: center;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  
+  
+  
+  
+  /* trending card style */
+  
+  
+  .trending-container{
+    padding-top: 20px;
+    
+  }
+  .trending-destination{
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .trending-cards{
+    
+    width: 20%;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 2px 2px 10px black;
+  }
+  
+  
+  .trending-image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  flex-wrap: wrap;
+  }
+  .Trending-title{
+    text-align: center;
+    padding: 5px;
+  }
+  /* .description{
+    text-align: center;
+    padding: 4px;
+  }
+   button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+    
+   } */
+  /* card style upto here */
+      
+  
+  /* events css */
+  
+  /* .wrapper {
+      position: fixed;
+      width: 395px; 
+      height: 440px;  /*440px */
+      /*margin-top: 10%;
+      /*top: 0;
+      /*right: 3%;
+      /*background: transparent;
+      /*opacity: 10;
+      /*border: 2px solid rgba(255, 255, 255, .5);
+      /*border-radius: 20px;
+      /*backdrop-filter: blur(20px);
+      /*box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+      /*display: flex;
+      /*justify-content: center;
+      /*align-items: center;
+      /*overflow: hidden;
+      t/*ransform: scale(0);
+     /* transition: transform right 0.5s ease-in-out, height .2s ease;
+  }/*
+  
+  .wrapper.active-popup {
+      transform: scale(1);
+  }
+  
+  .wrapper.active {
+      height: 520px;
+  }
+  
+  .wrapper .form-box {
+      width: 100%;
+      padding: 40px;
+  }
+  
+  .wrapper .form-box.login {
+      transition: transform .18s ease;
+      transform: translateX(0);
+  }
+  
+  .wrapper.active .form-box.login {
+      transition: none;
+      transform: translateX(-400px);
+  }
+  
+  .wrapper .form-box.register {
+      position: absolute;
+      transition: none;
+      transform: translateX(400px);
+  }
+  
+  .wrapper.active .form-box.register {
+    transition: transform .28s ease;
+    transform: translateX(0);
+  }
+  .wrapper .icon-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45px;
+      height: 45px;
+      background: #e6e9ed;
+      font-size: 2em;
+      color: #251c60;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 20px;
+      cursor: pointer;
+      z-index: 1;
+  }
+  
+  .form-box h2 {
+      font-size: 2em;
+      color:#050505;
+      text-align: center;
+  
+  }
+  
+  .input-box {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      border-bottom: 2px solid #01060f;
+      margin: 30px 0;
+  }
+  
+  .input-box label{
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+      font-size: 1em;
+      color: #00070d;
+      font-weight: 500;
+      pointer-events: none;
+      transition: .5s;
+  }
+  
+  .input-box input:focus~label,
+  .input-box input:valid~label{
+      top: 5px;
+  }
+   
+  .input-box input{
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 1em;
+      color: #000407;
+      font-weight: 100;
+      padding: 0 35px 0 5px;
+  }
+  
+  .input-box .icon{
+      position: absolute;
+      right: 8px;
+      font-size: 1.2em;
+      color: #090a0a;
+      line-height: 57px;
+  }
+  
+  .remember-forgot{
+      font-size: .9em;
+      color: #080809;
+      font-weight: 500;
+      margin: -15px 0 15px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  
+  .remember-forgot label input {
+      accent-color: #162938;
+      margin-right: 3px;
+  }
+  
+  
+  .remember-forgot a {
+      color: #162938;
+      text-decoration: none;
+  }
+  
+  
+  .remember-forgot a:hover {
+      text-decoration: underline;
+  }
+  
+  .btn {
+      width:100%;
+      height: 45px;
+      background: #162938;
+      border:#e7ebee;
+      outline:#e7ebee;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      color: #fff;
+      font-weight: 500;
+  }
+  
+  .login-register {
+      font-size: .9em;
+      color: #eef0f1;
+      text-align: center;
+      font-weight: 500;
+      margin: 25px 0 10px;
+  }
+  
+  .login-register p a {
+      color: #edeff1;
+      text-decoration: none;
+      font-weight: 600;
+  }
+  
+  .login-register p a:hover {
+      text-decoration: underline;
+  } */
+  
+  
+  /* festival content */
+  *{
+    margin: 0px;
+  padding: 0px;
+  }
+  
+  body{
+    font-family: Arial;
+  }
+   
+  .festivals_container{
+    padding-top: 20px;
+    
+  }
+  .festivals-Destination{
+    display: flex;
+    justify-content: center;
+   
+  }
+  .festivals-caption{
+    position: fixed;
+  }
+  .festivals-cards{
+    
+    width: 20%;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 2px 2px 10px black;
+  }
+  
+  
+  .festivals-image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  flex-wrap: wrap;
+  }
+  .festivals-title{
+    text-align: center;
+    padding: 5px;
+  }
+  .description{
+    text-align: center;
+    padding: 4px;
+  }
+   .festivals-cards button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+    
+   }
+  /* card style upto here */
+      
+  
+  /* contributor */
+  
+  
+  
+  /* .foot{
+    text-align: right;
+  } */
+  
+  /* footer css */
+  footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right,#00093c,#2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px; 
+  }
+  .row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  }
+  .col{
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  .translator{
+    position: relative;
+  }
+  .col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+  }
+  .footer-logo{
+    width: 80px;
+    margin-bottom:30px ;
+  }
+  .col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 2px 0;
+  }
+  ul li{
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+  }
+  form .far{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+  form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  form button .fas{
+    font-size: 16px;
+    color:#ccc;
+  }
+  .social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+  cursor: pointer;  
+  }
+  hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+  }
+  .owner{
+    text-align: center;
+  }
+  .underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+  }
+  .underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+  }
+  @keyframes moving{
+    0%{
+      left: -20px;
+  }
+  100%{
+    left: 100%;
+  }
+  }
+  @media (max-width:700px){
+    footer{
+      bottom: unset;
+    }
+    .col{
+      flex-basis: 100%;
+     
+    }
+    .col:nth-child(2), .col:nth-child(3){
+      flex-basis: 100%;
+    }
+  }
+  
+  /* 
+  making responsive */
+  
+  /* new css (Media Queries*/
+  
+  @media only screen and (max-width: 600px) {
+    /* Styles for small screens */
+  }
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for medium screens */
+  }
+  @media only screen and (min-width: 1025px) {
+    /* Styles for large screens */
+  }
+ 

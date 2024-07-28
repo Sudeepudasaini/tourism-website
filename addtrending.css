@@ -1,0 +1,124 @@
+.addtrendingCard{
+    display: none;
+    position: relative;
+    width: 400px;
+    background-color: aqua;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 10px 10px 15px black;
+}
+
+.addtrendingCard input{
+    width: 100%;
+    display: block;
+}
+.closebtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.heading-and-add-trending{
+    
+    margin: auto;
+    margin-top: 10px;
+    width: 70%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* festival content */
+.addfestivalsCard{
+    display: none;
+    position: relative;
+    width: 400px;
+    background-color: aqua;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 10px 10px 15px black;
+}
+
+.addfestivalsCard input{
+    width: 100%;
+    display: block;
+}
+.closebtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.heading-and-add-festivals{
+    
+    margin: auto;
+    margin-top: 10px;
+    width: 70%;
+
+    display: flex;
+    justify-content: space-between;
+}
+/* hotel content */
+.addhotelCard{
+    display: none;
+    position: relative;
+    width: 400px;
+    background-color: aqua;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 10px 10px 15px black;
+}
+
+.addhotelCard input{
+    width: 100%;
+    display: block;
+}
+.closebtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.heading-and-add-hotel{
+    
+    margin: auto;
+    margin-top: 10px;
+    width: 70%;
+
+    display: flex;
+    justify-content: space-between;
+}
+/* facility content */
+.addfacilityCard{
+    display: none;
+    position: relative;
+    width: 400px;
+    background-color: aqua;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 10px 10px 15px black;
+}
+
+.addfacilityCard input{
+    width: 100%;
+    display: block;
+}
+.closebtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.heading-and-add-facility{
+    
+    margin: auto;
+    margin-top: 10px;
+    width: 70%;
+
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,33 @@
+.exploreadmincontent{
+  border: 2px solid black;
+}
+.exploreform{
+    position: fixed;
+}
+.addExploreCard{
+    display: none;
+    position: relative;
+    width: 400px;
+    background-color: aqua;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 10px 10px 15px black;
+}
+
+.addExploreCard input{
+    width: 100%;
+    display: block;
+}
+.closebtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.heading-and-add-explore{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}

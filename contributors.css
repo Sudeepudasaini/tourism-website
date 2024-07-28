@@ -1,0 +1,99 @@
+.contributor-container {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+
+.contributor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.contributor-card {
+    width: 40%;
+    margin: 20px; /* Adjust margin */
+    perspective: 1000px;
+    cursor: pointer;
+    display: flex; /* Set display to flex */
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: space-between; /* Distribute space between items */
+    border-radius: 10px; /* Apply border-radius */
+    overflow: hidden; /* Hide overflow */
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    flex-grow: 1; /* Allow the inner content to grow */
+}
+
+.front-face {
+    backface-visibility: hidden;
+}
+
+.front-face img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.back-face {
+    backface-visibility: hidden;
+    background: #c62600;
+    color: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: rotateY(180deg);
+}
+
+.back-face h2 {
+    font-size: 50px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.back-face p {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.social-media i {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    background: #e43a00;
+    border-radius: 50%;
+    margin: 25px 6px;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.resumebtn {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    background: #fff;
+    padding: 10px 50px;
+    border-radius: 25px;
+    margin: 20px auto 0; /* Adjust margin */
+}
+
+.contributor-card:hover .card-inner {
+    transform: rotateY(-180deg);
+}

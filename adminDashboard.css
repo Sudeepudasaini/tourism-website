@@ -1,0 +1,371 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.adminNavbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;  
+}
+.adminNavbar ul{
+  margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+}
+.adminNavbar li{
+    margin-left: 20px;
+}
+
+.logoutbtn{
+  width: auto;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.adminNavbar a {
+    text-decoration: none;
+}
+
+
+ /* addexplore.css */
+ .exploreadmincontent{
+    border: 2px solid black;
+  }
+  .exploreform{
+      position: fixed;
+  }
+  .addExploreCard{
+      display: none;
+      position: relative;
+      width: 400px;
+      background-color: aqua;
+      padding: 10px;
+      margin: 15px;
+      box-shadow: 10px 10px 15px black;
+  }
+  
+  .addExploreCard input{
+      width: 100%;
+      display: block;
+  }
+  .explore-title{
+    width: auto;
+  }
+  .closebtn{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 24px;
+      cursor: pointer;
+  }
+  .heading-and-add-explore{
+      margin: auto;
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+  }
+  /* explore32 */
+  *{
+    margin: 0px;
+  padding: 0px;
+  }
+  
+  body{
+    font-family: Arial;
+  }
+   
+  .explore_container{
+    padding-top: 20px;
+    
+  }
+  .Explore-Destination{
+    display: flex;
+    justify-content: center;
+   
+  }
+  .explore-caption{
+    position: fixed;
+  }
+  .explore-cards{
+    
+    width: 20%;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 2px 2px 10px black;
+  }
+  
+  
+  .explore-image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  flex-wrap: wrap;
+  }
+  .explore-title{
+    text-align: center;
+    padding: 5px;
+  }
+  .description{
+    text-align: center;
+    padding: 4px;
+  }
+   .explore-cards button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+    
+   }
+   .deleteExploreBtn{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+   }
+
+
+
+
+
+
+
+
+   /* addtrending.css */
+   .trendingadmincontent{
+    border: 2px solid black;
+    height: max-content;
+    width: auto;
+  }
+  
+  .trendingform{
+    padding-top: 200px;
+      position: relative;
+  }
+  .addtrendingCard{
+      display: none;
+      position: relative;
+      width: 400px;
+      background-color: aqua;
+      padding: 10px;
+      margin: 15px;
+      box-shadow: 10px 10px 15px black;
+  }
+  
+  .addtrendingCard input{
+      width: 100%;
+      display: block;
+  }
+  .trending-title{
+    width: auto;
+  }
+  .closebtn{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-size: 24px;
+      cursor: pointer;
+  }
+  .heading-and-add-trending{
+      margin: auto;
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+  }
+  /* trending32 */
+  *{
+    margin: 0px;
+  padding: 0px;
+  }
+  
+  body{
+    font-family: Arial;
+  }
+   
+  .trending_container{
+    padding-top: 20px;
+    
+  }
+  .trending-Destination{
+    display: flex;
+    justify-content: center;
+   
+  }
+  .trending-caption{
+    position: fixed;
+  }
+  .trending-cards{
+    
+    width: 20%;
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 2px 2px 10px black;
+  }
+  
+  
+  .trending-image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  flex-wrap: wrap;
+  }
+  .trending-title{
+    text-align: center;
+    padding: 5px;
+  }
+  .description{
+    text-align: center;
+    padding: 4px;
+  }
+   .trending-cards button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+    
+   }
+   .deletetrendingBtn{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+   }
+
+
+
+
+/* festivals content   */
+.festivalsadmincontent{
+  border: 2px solid black;
+  height: max-content;
+  width: auto;
+}
+.festivalsform{
+  padding-top: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.addfestivalsCard{
+    display: none;
+    position: relative;
+    width: 400px;
+    background-color: aqua;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: 10px 10px 15px black;
+}
+
+.addfestivalsCard input{
+    width: 100%;
+    display: block;
+}
+.festivals-title{
+  width: auto;
+}
+.closebtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.heading-and-add-festivals{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+/* festivals32 */
+*{
+  margin: 0px;
+padding: 0px;
+}
+
+body{
+  font-family: Arial;
+}
+ 
+.festivals_container{
+  padding-top: 20px;
+  
+}
+.festivals-Destination{
+  display: flex;
+  justify-content: center;
+ 
+}
+.festivals-caption{
+  position: fixed;
+}
+.festivals-cards{
+  
+  width: 20%;
+  border-radius: 5px;
+  margin: 40px;
+  box-shadow: 2px 2px 10px black;
+}
+
+
+.festivals-image img{
+width: 100%;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+flex-wrap: wrap;
+}
+.festivals-title{
+  text-align: center;
+  padding: 5px;
+}
+.description{
+  text-align: center;
+  padding: 4px;
+}
+ .festivals-cards button{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+ button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  
+ }
+ .deletefestivalsBtn{
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+ }
+
+/* booking content */
+.bookadmincontent{
+ margin-top: 10px;
+ margin-bottom: 50px;
+}

@@ -1,0 +1,186 @@
+/* Styles for the fixed navigation bar */
+
+body{
+    width: 100%;
+  }
+  .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.8); /* Transparent with white background */
+      z-index: 1000; /* Ensure it's above other content */
+      padding: 10px 20px; /* Adjust as needed */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      display: flex;
+      align-items: center;
+      
+    }
+    
+    /* Styles for the logo */
+    .logo {
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    .logo img {
+      width: 100px; /* Adjust as needed */
+      height: auto;
+      margin-right: 10px; /* Adjust as needed */
+    }
+    
+    /* Styles for navigation links */
+    .navbar-links {
+      flex-grow: 1;
+      text-align: center;
+     
+    }
+    
+    .navbar-links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333; /* Adjust link color */
+      font-weight: bold;
+      border-radius: 50%; /* Make it a circle */
+      background-color: transparent; /* Background color transparent by default */
+      transition: all 0.3s ease; /* Add smooth transition */
+    }
+    
+    /* Styles for active link */
+    .navbar-links a.active {
+      color: blue; /* Adjust active link color */
+    }
+    
+    /* Circle shape on hover */
+    .navbar-links a:hover {
+      background-color: #ccc; /* Adjust background color on hover */
+    }
+    
+    /* Hide the transparent navigation bar when not scrolled */
+    .navbar {
+      opacity: 1;
+      box-shadow: none;
+    }
+  
+    
+    /* Add padding to content when the navbar is fixed */
+    body.fixed-nav {
+      padding-top: 70px; /* Adjust based on navbar height */
+    }
+    
+    
+    /* Placeholder styles for content */
+    /* home content */
+    
+    body,html{
+      margin: 0;
+      padding:0;
+      width: 100%;
+      height: 100%;
+      font-family: sans-serif;
+    }
+  .home{
+    margin-top: auto;
+    padding: 0px;
+    width:100% ;
+    height: 100%;
+    overflow: hidden;
+    position:relative;
+    background-image: url(Images/explore\ the\ world.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 50s infinite ease-in-out;
+  
+  }
+  .Home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%,-50%);
+  text-transform:uppercase ;
+  }
+  
+  .Home-content h1{
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+  }
+  
+  .Home-content h1 span{
+  color: aquamarine;
+    
+  }
+  .Home-content a{
+  
+    background: #85c1ee;
+    padding: 10px 24;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .Home-content a:hover{
+  background: #034e88;
+  color: #fff;
+  }
+  @keyframes change{
+    0%
+    {
+      background-image: url(Images/chitwan\ national\ park.jpg);
+  
+    }
+   10%
+    {
+      background-image: url(Images/gosaikunda.jpg);
+      
+    } 
+     20%
+    {
+      background-image: url(Images/annnapurna.jpg);
+      
+    }  
+    30%
+    {
+      background-image: url(Images/pashupatinath.jpg);
+      
+    }  
+    40%
+    {
+      background-image: url(Images/patan\ durbar\ sqaure.jpg);
+      
+    }  
+    50%
+    {
+      background-image: url(Images/lumbini.jpg);
+      
+    }
+    60%
+    {
+      background-image: url(Images/mustang.jpg);
+      
+    }
+    70%
+    {
+      background-image: url(Images/rara\ lake.jpg);
+      
+    }
+    80%
+    {
+      background-image: url(Images/janakpur.jpg);
+      
+    }
+    90%
+    {
+      background-image: url(Images/bandipur.jpg);
+      
+    }
+    100%
+    {
+      background-image: url(Images/bhaktapur\ nyatapola\ temple.jpg);
+      
+    }
+  }
+  

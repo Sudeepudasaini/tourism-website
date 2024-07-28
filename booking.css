@@ -1,0 +1,100 @@
+/* .booking .book-form{
+padding:2rem;
+background: var(--light-bg);
+}
+.booking .book-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.booking .book-form .flex .inputBox{
+    flex: 1 1 41rem;
+}
+.booking .book-form .flex .bookinputBox input{
+    width: 100%;
+    padding:1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+.booking .book-form .flex .bookinputBox input:focus{
+    background: var(--black);
+    color: var(--white);
+}
+.booking .book-form .flex .bookinputBox input:focus::placeholder{
+color: var(--light-white);
+}
+.booking .book-form .flex .bookinputBox span{
+    font-size: 1.5rem;
+    color: var(--light-black);
+}
+.booking .book-form .bookbtn{
+margin-top: 2rem;
+}  */
+
+
+
+
+
+.booking .book-form {
+    padding:2rem;
+    background: #f4f4f4; /* Light background color */
+   /* border-radius: 8px; /* Rounded corners */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for box */
+}
+
+.booking .book-form .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* .booking .book-form .flex .inputBox {
+    flex: 1 1 41rem;
+}
+
+.booking .book-form .flex .inputBox input {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: #333; /* Text color */
+   /* border: 1px solid #ccc; /* Border color */
+    /*border-radius: 4px; /* Rounded input corners */
+/*}
+
+/*.booking .book-form .flex .inputBox input:focus {
+    outline: none; /* Remove focus outline */
+   /* border-color: #007bff; /* Border color on focus */
+   /* box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Focus shadow */
+/*}
+
+.booking .book-form .flex .inputBox input::placeholder {
+    color: #999; /* Placeholder color */
+/*}
+
+.booking .book-form .flex .inputBox span {
+    font-size: 1.5rem;
+    color: #666; /* Label color */
+/*} */
+.bookbtn{
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.booking .book-form .bookbtn {
+
+    margin-top: 2rem;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 1rem 2rem; /* Button padding */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Rounded button corners */
+    cursor: pointer; /* Cursor style */
+}
+
+.booking .book-form .bookbtn:hover {
+    background-color: #4f0fe5; /* Button background color on hover */
+} 
